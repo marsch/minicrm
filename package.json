@@ -4,12 +4,12 @@
   "description": "mini-crm",
   "private": true,
   "scripts": {
-    "build": "nwb build-react-app",
-    "clean": "nwb clean-app",
-    "start": "nwb serve-react-app",
-    "test": "nwb test",
-    "test:coverage": "nwb test --coverage",
-    "test:watch": "nwb test --server"
+    "build": "./node_modules/.bin/nwb build-react-app",
+    "clean": "./node_modules/.bin/nwb nwb clean-app",
+    "start": "./node_modules/.bin/nwb nwb serve-react-app",
+    "test": "./node_modules/.bin/nwb nwb test",
+    "test:coverage": "./node_modules/.bin/nwb nwb test --coverage",
+    "test:watch": "./node_modules/.bin/nwb nwb test --server"
   },
   "dependencies": {
     "faker": "3.1.0",
