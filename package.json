@@ -4,12 +4,13 @@
   "description": "mini-crm",
   "private": true,
   "scripts": {
-    "build": "./node_modules/.bin/nwb build-react-app",
-    "clean": "./node_modules/.bin/nwb nwb clean-app",
-    "start": "./node_modules/.bin/nwb nwb serve-react-app",
-    "test": "./node_modules/.bin/nwb nwb test",
-    "test:coverage": "./node_modules/.bin/nwb nwb test --coverage",
-    "test:watch": "./node_modules/.bin/nwb nwb test --server"
+    "build": "nwb build-react-app",
+    "clean": "nwb clean-app",
+    "start": "nwb serve-react-app",
+    "test": "nwb test",
+    "test:coverage": "nwb test --coverage",
+    "test:watch": "nwb test --server",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "faker": "3.1.0",
@@ -27,7 +28,8 @@
     "redux-act": "1.1.0",
     "redux-pouchdb": "0.1.1",
     "semantic-ui-css": "^2.2.4",
-    "semantic-ui-react": "^0.61.1"
+    "semantic-ui-react": "^0.61.1",
+    "nwb": "0.12.2",
   },
   "devDependencies": {
     "babel-eslint": "7.1.0",
@@ -44,7 +46,6 @@
     "karma-sinon-chai": "1.2.4",
     "mocha": "3.1.2",
     "node-sass": "3.13.0",
-    "nwb": "0.12.2",
     "nwb-sass": "^0.6.0",
     "sass-loader": "4.0.2",
     "toolbox-loader": "0.0.3"
