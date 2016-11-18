@@ -49,7 +49,12 @@
     "sass-loader": "4.0.2",
     "toolbox-loader": "0.0.3"
   },
-  "author": "",
+  "engineStrict": true,
+  "engines": {
+    "node": "6.6.0",
+    "npm": "3.10.3"
+  },
+  "author": "mario scheliga",
   "license": "MIT",
   "repository": ""
 }
