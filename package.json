@@ -4,7 +4,7 @@
   "description": "mini-crm",
   "private": true,
   "scripts": {
-    "build": "nwb build-react-app",
+    "build": "nwb build --no-vendor",
     "clean": "nwb clean-app",
     "start": "nwb serve-react-app",
     "test": "nwb test",
