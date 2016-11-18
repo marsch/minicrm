@@ -4,7 +4,11 @@
 
 ## Installation
 
-- Running `npm install` in the app's root directory will install everything you need for development.
+```
+git clone https://github.com/marsch/minicrm.git
+cd minicrm
+npm install
+```
 
 ## Development Server
 
