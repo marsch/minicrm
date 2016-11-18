@@ -18,6 +18,7 @@ module.exports = {
     noInfo: true
   },
   webpack: {
+    publicPath: 'https://marsch.github.io/minicrm/',
     extra: {
       devtool: '#source-map'
     },
