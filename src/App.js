@@ -1,5 +1,5 @@
 import React from 'react'
-import {Router, browserHistory} from 'react-router'
+import {Router, hashHistory} from 'react-router'
 import { Provider } from 'react-redux'
 
 import routes from './routes'
@@ -11,7 +11,7 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <Router children={routes} history={browserHistory} />
+        <Router children={routes} history={hashHistory} />
       </Provider>
     )
   }

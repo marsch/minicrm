@@ -90,7 +90,6 @@ class Main extends React.Component {
             {
               this.state.availableRoutes.map((route, index) => {
                 const active = (this.props.location.pathname == route.path)
-                debugger
                 return <Tab active={active} label={route.label} key={`route-${index}`} className="page-tab"/>
               })
             }
